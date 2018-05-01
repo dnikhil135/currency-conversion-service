@@ -1,4 +1,4 @@
-package com.nik.microservices.currencyconversionservice.resource;
+/*package com.nik.microservices.currencyconversionservice.resource;
 
 import java.math.BigDecimal;
 
@@ -20,3 +20,4 @@ public class CurrencyConversionResource {
 		
 	}
 }
+*/

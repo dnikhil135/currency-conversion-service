@@ -3,35 +3,35 @@ package com.nik.microservices.currencyconversionservice.model;
 import java.math.BigDecimal;
 
 public class CurrencyConversionBean {
-
-	private int id;
+	private Long id;
 	private String from;
 	private String to;
 	private BigDecimal currencyValue;
 	private BigDecimal quantity;
-	private BigDecimal convertionValue;
+	private BigDecimal totalCalculatedAmount;
 	private int port;
-	
+
 	public CurrencyConversionBean() {
-		
-	}	
-	public CurrencyConversionBean(int id, String from, String to, BigDecimal currencyValue, BigDecimal quantity,
-			BigDecimal convertionValue,int port) {
+
+	}
+
+	public CurrencyConversionBean(Long id, String from, String to, BigDecimal currencyValue, BigDecimal quantity,
+			BigDecimal totalCalculatedAmount, int port) {
 		super();
 		this.id = id;
 		this.from = from;
 		this.to = to;
 		this.currencyValue = currencyValue;
 		this.quantity = quantity;
-		this.convertionValue = convertionValue;
+		this.totalCalculatedAmount = totalCalculatedAmount;
 		this.port = port;
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -55,7 +55,7 @@ public class CurrencyConversionBean {
 		return currencyValue;
 	}
 
-	public void setCurrencyValue(BigDecimal currencyValue) {
+	public void setConversionMultiple(BigDecimal currencyValue) {
 		this.currencyValue = currencyValue;
 	}
 
@@ -67,12 +67,12 @@ public class CurrencyConversionBean {
 		this.quantity = quantity;
 	}
 
-	public BigDecimal getConvertionValue() {
-		return convertionValue;
+	public BigDecimal getTotalCalculatedAmount() {
+		return totalCalculatedAmount;
 	}
 
-	public void setConvertionValue(BigDecimal convertionValue) {
-		this.convertionValue = convertionValue;
+	public void setTotalCalculatedAmount(BigDecimal totalCalculatedAmount) {
+		this.totalCalculatedAmount = totalCalculatedAmount;
 	}
 
 	public int getPort() {
@@ -83,6 +83,4 @@ public class CurrencyConversionBean {
 		this.port = port;
 	}
 
-	
-	
 }
